@@ -19,7 +19,8 @@ fi
 # directory is set up as an SVN external.
 if test ! -e gtest; then
   echo "Google Test not present.  Fetching gtest-1.5.0 from the web..."
-  curl http://googletest.googlecode.com/files/gtest-1.5.0.tar.bz2 | tar jx
+  #curl http://googletest.googlecode.com/files/gtest-1.5.0.tar.bz2 | tar jx
+  curl http://pkgs.fedoraproject.org/lookaside/pkgs/gtest/gtest-1.5.0.tar.bz2/md5/8b2c3c3f26cb53e64a3109d03a97200a/gtest-1.5.0.tar.bz2 | tar jx
   mv gtest-1.5.0 gtest
 fi
 
